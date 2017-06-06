@@ -1,0 +1,28 @@
+@media (max-width: 768px)
+{
+	.cintillo
+	{
+		width: 360px;
+	}
+	.algo
+	{
+		display: none;
+	}
+	#logo-slider
+	{
+		width: 75%;
+	}
+	#algomas
+	{
+		display: none;
+	}
+}
+
+@media (max-width: 1500px)
+{
+	#algomas
+	{
+		margin-top: 13%;
+	}
+}
+

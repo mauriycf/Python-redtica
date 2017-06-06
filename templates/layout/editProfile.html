@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% if request.user.is_authenticated %}
+	{% block content %}
+		<div class="container">
+			<form action="" method="POST">
+				{% csrf_token %}
+				{% include 'form_template.html' %}
+				<div class="col-sm-12">
+					<input type="submit" class="btn btn-info col-sm-6" value="enviar">
+				</div>
+			</form>
+		</div>
+	{% endblock content %}
+{% endif %}

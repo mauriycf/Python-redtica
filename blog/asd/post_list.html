@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+	<div class="row">
+	<div class="container">
+		<div class="col s12 m9">
+		<h2 class="light italic">Noticias</h2>
+		<table class="bordered">
+			<tbody>
+				{% for entrada in object_list %}
+					<tr>
+						<td><div class="chip {{ entrada.colores }} z-depth-3"><a href="/categoria/{{ entrada.etiqueta.slug }}" class="white-text"> {{ entrada.etiqueta }} </a> </div></td>
+						<td> <a href="/entrada/{{entrada.slug}}/">{{ entrada.titulo }}</a> </td>
+						<td class="hide-on-small-only"> {{ entrada.created_at }} </td>
+					</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+		</div>
+		<div class="col s12 m3">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam totam, accusantium! A, modi! Possimus perspiciatis ducimus tempora odit sapiente vitae, rerum perferendis culpa aperiam atque at tenetur laborum quasi dolorum molestias magni voluptates accusantium harum totam nesciunt blanditiis officia. Amet facilis odit, qui aliquam inventore porro ex incidunt, nostrum expedita laboriosam dolore at est architecto minima doloremque autem. Enim sequi quisquam illum sint doloribus fugiat, quas dolores nihil, maxime ipsum ipsam placeat rerum asperiores est eveniet sed sit voluptatibus facere.</p>
+		</div>
+	</div>
+	</div>
+{% endblock content %}

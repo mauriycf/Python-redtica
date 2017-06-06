@@ -1,0 +1,28 @@
+body {
+display: flex;
+min-height: 100vh;
+flex-direction: column;
+}
+main {
+flex: 1 0 auto;
+}
+
+.page-footer
+{
+	background: #0275D8;
+	height: 250px;
+	color: #fff;
+}
+
+.page-footer a
+{
+	color: #fff;
+}
+
+.page-footer .footer-copyright
+{
+	height: 60px;
+	text-align: center;
+	margin-top: 1%;
+	background: #0063b5;
+}
